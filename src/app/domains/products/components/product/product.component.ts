@@ -21,4 +21,8 @@ export class ProductComponent {
   addToCartHandler() {
     this.addtoCart.emit(this.product)
   }
+
+  ngOnInit() {
+    console.log(this.product.images);  // Añadido para depuración
+  }
 }
